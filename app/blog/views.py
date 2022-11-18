@@ -24,7 +24,7 @@ class BlogGenerador(View):
         for _ in range(cantidad):
             numr = random.randint(0, 10000)
             entradablog = EntradaBlog()
-            entradablog.titulo = 'Blog ' + str(numr)
+            entradablog.titulo = lorem.sentence()
             entradablog.contenido = lorem.paragraph()
             entradablog.save()
             
